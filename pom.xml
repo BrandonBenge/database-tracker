@@ -115,5 +115,10 @@
             <artifactId>commons-io</artifactId>
             <version>2.5</version>
         </dependency>
+        <dependency>
+        	<groupId>org.mariadb.jdbc</groupId>
+        	<artifactId>mariadb-java-client</artifactId>
+        	<version>2.2.3</version>
+        </dependency>
     </dependencies>
 </project>
