@@ -1,7 +1,10 @@
 # database-tracker
 
 ## Purpose
-This program is to proof test an HA with LB mysql environment. It will work with both MySQL and MariaDB with focus on MariaDB with Galara.
+This will be a vary modulized program for development purposes.
+
+## TestFramework
+This program is to proof test an HA with LB mysql environment. It will work with both MySQL and MariaDB with focus on MariaDB with Galara. Currently my focus in only on the GSLB/LB stuff. I look to extend further to many different areas.
 
 ## Focused environment for our Galara clusters
                   GSLB(Global Load Balancer)
