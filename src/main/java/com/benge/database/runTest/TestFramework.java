@@ -137,7 +137,7 @@ public class TestFramework {
 	    		{
 	    		    try
 	    		    {
-	    		        s = new Socket(HostIP, NormalPortInt);
+	    		        s = new Socket(HostIP, RedirectPortInt);
 	    		        System.out.println(" SUCCESS: Was able to check the TCP port for host ip at "+HostIP+":"+RedirectPortInt+".");
 	    		    }
 	    		    catch (Exception e)
@@ -244,7 +244,7 @@ public class TestFramework {
 		Statement stmt = null;
 		try {
 			Class.forName("org.mariadb.jdbc.Driver").newInstance();
-			dbConnection = DriverManager.getConnection("jdbc:mariadb://" + host + ":" + port + "/information_schema?connectTimeout=5",user,password);
+			dbConnection = DriverManager.getConnection("jdbc:mariadb://" + host + ":" + port + "/information_schema?connectTimeout=500",user,password);
 		} catch (InstantiationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
