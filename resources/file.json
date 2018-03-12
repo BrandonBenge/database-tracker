@@ -5,6 +5,7 @@
 	        {
 	        		"hostname" : "localhost", 
 		        "ip" : "127.0.0.1",
+		        "active" : false,
 		        "hostIPs" : [
 		                "127.0.0.1",
 		                "127.0.0.1",
@@ -16,6 +17,7 @@
 	    		{
 	        		"hostname" : "localhost", 
 		        "ip" : "127.0.0.1",
+		        "active" : true,
 		        "hostIPs" : [
 		                "127.0.0.1",
 		                "127.0.0.1",
