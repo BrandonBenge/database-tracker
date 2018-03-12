@@ -25,6 +25,8 @@ This program is to proof test an HA with LB mysql environment. It will work with
                        
 ## Use(FYI not tested yet, just noting what it should be)
 java -cp java.jar com.benge.database.runTest.TestFramework \<location of json file\> \<database user\> \<database pass\>
+### or if you dont have the database password
+java -cp java.jar com.benge.database.runTest.TestwoPassword \<location of json file\> 
 
 ## Example of json file
 - [json file](resources/file.json)

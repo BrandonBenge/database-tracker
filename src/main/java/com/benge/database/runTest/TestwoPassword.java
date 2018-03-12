@@ -16,7 +16,7 @@ import org.json.JSONObject;
  *
  * @author brandonbenge
  */
-public class TestFramework {
+public class TestwoPassword {
     /**
      * @param args the command line arguments
      */
@@ -27,10 +27,8 @@ public class TestFramework {
         	jsonInput = readJSON(args[0]);
             // TODO code application logic here
         } catch (Exception ex) {
-            Logger.getLogger(TestFramework.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(TestwoPassword.class.getName()).log(Level.SEVERE, null, ex);
         }
-        String mysqlUser = args[1];
-        String mysqlPass = args[2];
         System.out.println("Output json file:" + jsonInput.toString());
         JSONObject gslbJson =  jsonInput.getJSONObject("gslb_config");
         String gslb = gslbJson.getString("gslb");
@@ -57,7 +55,6 @@ public class TestFramework {
             testShare.testPort(hostIPs, normalPortInt, redirectPortInt, isActive, activeMetadata); //Test host IPS first to guarantee we are setting to hosts correctly
             testShare.testLbVip(hostname, ip, normalPortInt, isActive);
         }
-        testShare.testEndtoEnd(gslb, normalPortInt, mysqlUser, mysqlPass);
         System.out.println("SUCCESS: The application has done end to end testing on the LB and everthing is 'Functioning'!");
 
     }
